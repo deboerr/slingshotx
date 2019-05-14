@@ -1,0 +1,11 @@
+D:\repos\SlingshotX\bin\Debug\netcoreapp2.0\SlingshotX.deps.json
+D:\repos\SlingshotX\bin\Debug\netcoreapp2.0\SlingshotX.runtimeconfig.json
+D:\repos\SlingshotX\bin\Debug\netcoreapp2.0\SlingshotX.runtimeconfig.dev.json
+D:\repos\SlingshotX\bin\Debug\netcoreapp2.0\SlingshotX.dll
+D:\repos\SlingshotX\bin\Debug\netcoreapp2.0\SlingshotX.pdb
+D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.csproj.CoreCompileInputs.cache
+D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfoInputs.cache
+D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfo.cs
+D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.dll
+D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.pdb
+D:\repos\slingshotx\obj\Debug\netcoreapp2.0\slingshotx.csprojResolveAssemblyReference.cache
