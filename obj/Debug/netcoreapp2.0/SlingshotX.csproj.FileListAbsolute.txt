@@ -9,3 +9,14 @@ D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfo.cs
 D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.dll
 D:\repos\SlingshotX\obj\Debug\netcoreapp2.0\SlingshotX.pdb
 D:\repos\slingshotx\obj\Debug\netcoreapp2.0\slingshotx.csprojResolveAssemblyReference.cache
+C:\repos\Slingshotx\bin\Debug\netcoreapp2.0\SlingshotX.deps.json
+C:\repos\Slingshotx\bin\Debug\netcoreapp2.0\SlingshotX.runtimeconfig.json
+C:\repos\Slingshotx\bin\Debug\netcoreapp2.0\SlingshotX.runtimeconfig.dev.json
+C:\repos\Slingshotx\bin\Debug\netcoreapp2.0\SlingshotX.dll
+C:\repos\Slingshotx\bin\Debug\netcoreapp2.0\SlingshotX.pdb
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.csprojAssemblyReference.cache
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.csproj.CoreCompileInputs.cache
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfoInputs.cache
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfo.cs
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.dll
+C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.pdb
