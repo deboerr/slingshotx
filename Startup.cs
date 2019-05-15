@@ -19,15 +19,15 @@ namespace slingshotx
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connStr = Configuration.GetConnectionString("Danube");
+            var connStr = Configuration.GetConnectionString("DefaultConnection");
             if (connStr == null)
                 throw new ArgumentNullException("Connection string is null");
 
             services.AddTransient(provider => new MeetingService(connStr));
-            // services.AddTransient(provider => new RaceService(connStr));
-            // services.AddTransient(provider => new RunnerService(connStr));        
+            services.AddTransient(provider => new RaceService(connStr));
+            // services.AddTransient(provider => new RunnerService(connStr));
             // services.AddTransient(provider => new PodService(connStr));
-            // services.AddTransient(provider => new UserService(connStr));
+            services.AddTransient(provider => new UserService(connStr));
 
             services.AddMvc();
             services.AddOptions();

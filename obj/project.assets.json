@@ -16,6 +16,38 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "Halcyon/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "Tavis.UriTemplates": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/Halcyon.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Halcyon.dll": {}
+        }
+      },
+      "Halcyon.Mvc/2.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Halcyon": "2.5.1",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Halcyon.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Halcyon.Mvc.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -4799,6 +4831,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Tavis.UriTemplates/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/Tavis.UriTemplates.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Tavis.UriTemplates.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "type": "package",
         "dependencies": {
@@ -4831,6 +4875,32 @@
         "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Halcyon/2.5.1": {
+      "sha512": "Z0rd64g36JMMs+xb8AvMfO8aFgQnqMJ29qZHRlzMfSm4YuReBqfaSxeUZpUbSuw78TfQCIwbMvaVv0/gUV6W/Q==",
+      "type": "package",
+      "path": "halcyon/2.5.1",
+      "files": [
+        ".signature.p7s",
+        "halcyon.2.5.1.nupkg.sha512",
+        "halcyon.nuspec",
+        "lib/net451/Halcyon.dll",
+        "lib/net46/Halcyon.dll",
+        "lib/netstandard1.6/Halcyon.dll"
+      ]
+    },
+    "Halcyon.Mvc/2.5.1": {
+      "sha512": "ngHBrHYmlRtY1fSBtqvWd60O9rAEajvfkMnhJFOAUiD7gZAU/+lCKhYLizHbWMmaBpRSwX5ygF0PhOL0objYoA==",
+      "type": "package",
+      "path": "halcyon.mvc/2.5.1",
+      "files": [
+        ".signature.p7s",
+        "halcyon.mvc.2.5.1.nupkg.sha512",
+        "halcyon.mvc.nuspec",
+        "lib/net451/Halcyon.Mvc.dll",
+        "lib/net46/Halcyon.Mvc.dll",
+        "lib/netstandard1.6/Halcyon.Mvc.dll"
       ]
     },
     "Libuv/1.10.0": {
@@ -12892,6 +12962,26 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Tavis.UriTemplates/1.1.0": {
+      "sha512": "voghIVX/4y46XU372X8HUY60oBvoLwOguF61n6fx16q1vlocFIsdU5ld46TZuaq+XikcdRVOe1TXvu6C5kkFug==",
+      "type": "package",
+      "path": "tavis.uritemplates/1.1.0",
+      "files": [
+        ".signature.p7s",
+        "lib/Net35/Tavis.UriTemplates.dll",
+        "lib/Net35/Tavis.UriTemplates.pdb",
+        "lib/Net40/Tavis.UriTemplates.dll",
+        "lib/Net40/Tavis.UriTemplates.pdb",
+        "lib/Net45/Tavis.UriTemplates.dll",
+        "lib/Net45/Tavis.UriTemplates.pdb",
+        "lib/netstandard1.0/Tavis.UriTemplates.dll",
+        "lib/netstandard1.0/Tavis.UriTemplates.pdb",
+        "lib/portable-net4+netcore45+wpa81/Tavis.UriTemplates.dll",
+        "lib/portable-net4+netcore45+wpa81/Tavis.UriTemplates.pdb",
+        "tavis.uritemplates.1.1.0.nupkg.sha512",
+        "tavis.uritemplates.nuspec"
+      ]
+    },
     "WindowsAzure.Storage/8.1.4": {
       "sha512": "W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "type": "package",
@@ -12918,6 +13008,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Dapper >= 1.60.6",
+      "Halcyon.Mvc >= 2.5.1",
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.AspNetCore.Owin >= 2.2.0",
       "Microsoft.AspNetCore.Server.Kestrel >= 2.2.0",
@@ -12930,12 +13021,15 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\repos\\Slingshotx\\SlingshotX.csproj",
+      "projectUniqueName": "C:\\repos\\slingshotx\\SlingshotX.csproj",
       "projectName": "SlingshotX",
-      "projectPath": "C:\\repos\\Slingshotx\\SlingshotX.csproj",
+      "projectPath": "C:\\repos\\slingshotx\\SlingshotX.csproj",
       "packagesPath": "C:\\Users\\deboerr\\.nuget\\packages\\",
-      "outputPath": "C:\\repos\\Slingshotx\\obj\\",
+      "outputPath": "C:\\repos\\slingshotx\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12950,8 +13044,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "c:\\LocalNugets": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://tabcorp.pkgs.visualstudio.com/_packaging/Wagering/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -12969,24 +13062,28 @@
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[1.60.6, )"
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "[2.0.9, )"
-          },
-          "Microsoft.AspNetCore.Owin": {
-            "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "1.60.6"
           },
           "Microsoft.AspNetCore.Server.Kestrel": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "2.2.0"
+          },
+          "Microsoft.AspNetCore.Owin": {
+            "target": "Package",
+            "version": "2.2.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.0.0, )",
+            "version": "2.0",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.9"
+          },
+          "Halcyon.Mvc": {
+            "target": "Package",
+            "version": "2.5.1"
           }
         },
         "imports": [

@@ -20,3 +20,4 @@ C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfoInputs.cache
 C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.AssemblyInfo.cs
 C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.dll
 C:\repos\Slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.pdb
+C:\repos\slingshotx\obj\Debug\netcoreapp2.0\SlingshotX.csprojResolveAssemblyReference.cache
