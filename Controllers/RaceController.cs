@@ -31,5 +31,13 @@ namespace slingshotx.Controllers
             return Json(races);
         }
 
+        // GET slingshot/v1/race/readytopay/2019-05-17/10
+        [HttpGet("readytopay/{meetingDate}/{count}")]
+        public JsonResult GetReadyToPay(DateTime meetingDate, int count)
+        {
+            var races = _raceService.getReadyToPay(meetingDate, count);
+            return Json(races);
+        }
+
     }
 }

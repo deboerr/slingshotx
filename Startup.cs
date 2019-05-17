@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using slingshotx.Services;
+using Swashbuckle.AspNetCore.Swagger;
 using System;
 
 namespace slingshotx
@@ -25,12 +26,18 @@ namespace slingshotx
 
             services.AddTransient(provider => new MeetingService(connStr));
             services.AddTransient(provider => new RaceService(connStr));
-            // services.AddTransient(provider => new RunnerService(connStr));
-            // services.AddTransient(provider => new PodService(connStr));
+            services.AddTransient(provider => new RunnerService(connStr));
+            services.AddTransient(provider => new ScratchingService(connStr));
+            services.AddTransient(provider => new PodService(connStr));
             services.AddTransient(provider => new UserService(connStr));
 
             services.AddMvc();
             services.AddOptions();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "SlingshotX API", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +47,13 @@ namespace slingshotx
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SlingshotX API V1");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseMvc();
         }
